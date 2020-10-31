@@ -1,0 +1,16 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-icon name="arrow-undo-outline" class="back-menu" button (click)="back()"></ion-icon>
+  </ion-buttons>
+  <ion-title>Control Bombas</ion-title>
+</ion-toolbar>
+<ion-content class="ion-text-center">
+  <h5>Aqui va el mapa</h5>
+  <div class="mapouter">
+    <div class="gmap_canvas">
+      <iframe class="iframe" id="gmap_canvas" [src]="url" frameborder="0" scrolling="no" marginheight="0"
+        marginwidth="0">
+      </iframe>
+    </div>
+  </div>
+</ion-content>

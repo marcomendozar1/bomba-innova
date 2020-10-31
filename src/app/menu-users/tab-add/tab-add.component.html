@@ -1,0 +1,49 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-icon name="arrow-undo-outline" class="back-menu" button (click)="back()"></ion-icon>
+  </ion-buttons>
+  <ion-title>Administrar Usuarios</ion-title>
+</ion-toolbar>
+<ion-content class="ion-text-center">
+  <h5>Agregar Usuario</h5>
+  <form (ngSubmit)="onSubmit()">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="10" offset="1">
+          <ion-item>
+            <ion-label position="floating">Username:</ion-label>
+            <ion-input [(ngModel)]='user.username' name='username'></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="10" offset="1">
+          <ion-item>
+            <ion-label position="floating">Email:</ion-label>
+            <ion-input inputmode="email" type="email" [(ngModel)]='user.email' name='email'></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="10" offset="1">
+          <ion-item>
+            <ion-label position="floating">Password:</ion-label>
+            <ion-input [(ngModel)]='user.password' name='password'></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="10" offset="1">
+          <ion-item>
+            <ion-label position="floating">Telefono:</ion-label>
+            <ion-input [(ngModel)]='user.tel' name='tel'></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <br><br>
+    <ion-button color="primary" shape="round" type="submit">
+      Agregar
+    </ion-button>
+  </form>
+</ion-content>

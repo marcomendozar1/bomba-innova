@@ -1,0 +1,36 @@
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item button (click)="cuenta()">
+        Mi perfil
+        <ion-icon name="finger-print-outline" slot="end"></ion-icon>
+      </ion-item>
+      <ion-item button (click)="adminUsers()">
+        Administrar Usuarios
+        <ion-icon name="people-circle-outline" slot="end"></ion-icon>
+      </ion-item>
+      <ion-item button (click)="adminBombas()">
+        Administrar Bombas
+        <ion-icon name="server-outline" slot="end"></ion-icon>
+      </ion-item>
+      <ion-item button (click)="listBombas()">
+        Mostrar Bombas
+        <ion-icon name="radio-outline" slot="end"></ion-icon>
+      </ion-item>
+      <ion-item button (click)="presentAlert()">
+        Creditos
+        <ion-icon name="at-outline" slot="end"></ion-icon>
+      </ion-item>
+      <ion-item button (click)="logOut()">
+        Salir
+        <ion-icon name="log-out-outline" slot="end"></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-router-outlet id="main"></ion-router-outlet>

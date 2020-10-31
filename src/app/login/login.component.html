@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bomba Inova</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center">
+  <form>
+    <br>
+    <ion-icon name="person-circle-outline" class="size-icon"></ion-icon>
+    <br><br>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="10" offset="1">
+          <ion-item>
+            <ion-label position="floating">Email:</ion-label>
+            <ion-input inputmode="email" type="email" [(ngModel)]="user.email" name='email'></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="10" offset="1">
+          <ion-item>
+            <ion-label position="floating">Password:</ion-label>
+            <ion-input type="password" [(ngModel)]="user.password" name="password"></ion-input>
+          </ion-item>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <br><br>
+    <ion-button color="primary" shape="round" (click)="onSubmit()">
+      Iniciar Sesion
+    </ion-button>
+    <br>
+    <ion-button color="medium" shape="round" (click)="onSubmit()">
+      Olvdide la contraseña
+    </ion-button>
+  </form>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Derechos Reservados</ion-title>
+  </ion-toolbar>
+</ion-footer>

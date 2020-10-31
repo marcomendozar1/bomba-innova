@@ -1,0 +1,8 @@
+{
+  "name": "bomba-inova",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
